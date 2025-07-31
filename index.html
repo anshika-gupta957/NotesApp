@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notes App (CRUD)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Notes Application</h1>
+    <div class="note-input">
+      <textarea id="noteInput" placeholder="Type your note..."></textarea>
+      <button onclick="addNote()">Add Note</button>
+    </div>
+    <div id="notesList"></div>
+  </div>
+
+  <!-- Edit Modal -->
+  <div id="editModal" class="modal">
+    <div class="modal-content">
+      <textarea id="editNoteText"></textarea>
+      <button onclick="updateNote()">Update</button>
+      <button class="cancel" onclick="closeModal()">Cancel</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
